@@ -18,21 +18,21 @@ http://nginx.org/en/docs/njs/install.html
 ### Option 1: Check njs dynamic module loaded
 
 In nginx.conf:
-```
+```nginx
 load_module modules/ngx_http_js_module.so;
 ```
 
 ### Option 2: Check njs module is built-in
 
 In shell:
-```
+```bash
 nginx -V 2>&1 | grep njs
 ```
 
 ## Import njs application
 
 In nginx.conf:
-```
+```nginx
 http {
 
     ...
@@ -47,7 +47,7 @@ http://nginx.org/en/docs/http/ngx_http_js_module.html#js_import
 
 ## Configure VirtualHost
 
-```
+```nginx
 http {
 
     ...
